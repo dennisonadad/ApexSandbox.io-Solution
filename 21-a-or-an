@@ -1,0 +1,8 @@
+public String aOrAn(String word) {
+    IF(startsWith('a' || 'e' || 'i' || 'o' || 'u') {
+        return 'an' + aOrAn;
+    }
+    ELSE {
+        return 'a' + aOrAn;
+    }
+}

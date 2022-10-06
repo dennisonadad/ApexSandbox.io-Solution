@@ -1,5 +1,5 @@
 public Integer diff(Integer a, Integer b) {
-    IF(a >b) {
+    IF(a > b) {
         return a - b;
         }
     ELSE {

@@ -5,7 +5,7 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
     IF(num2 >= num1 && num1 >= num3) {
         return num2;
     }
-    IF(num1 >= num3 && num3 >= num2) {
-        return 1;
+    ELSE {
+        return num1;
     }
 }

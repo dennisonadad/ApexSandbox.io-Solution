@@ -1,8 +1,11 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
+    return b >= a && c >= b;
+    /*
     IF(a <= b && b <= c) {
         return true;
     }
     ELSE {
         return false;
     }
+    */
 }

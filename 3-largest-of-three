@@ -1,5 +1,7 @@
 public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
-	IF(num3 >= num2 && num3 >= num1) {
+	return Math.max(Math.max(num1,num2),num3);
+    /*
+    IF(num3 >= num2 && num3 >= num1) {
         return num3;
     }
     IF(num2 >= num1 && num2 >= num3) {
@@ -8,4 +10,5 @@ public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
     ELSE {
         return num1;
     }
+    */
 }

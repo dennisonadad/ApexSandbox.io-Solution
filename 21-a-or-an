@@ -1,4 +1,6 @@
 public String aOrAn(String word) {
+    return 'aeiou'.containsAny(word.left(1)) ? 'an ' + word : 'a ' + word;
+    /*
     if (word.startsWith('a') || 
         word.startsWith('e') || 
         word.startsWith('i') || 
@@ -7,4 +9,5 @@ public String aOrAn(String word) {
         return 'an ' + word;
     }
     return 'a ' + word;
+    */
 }

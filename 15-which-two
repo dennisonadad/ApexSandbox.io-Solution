@@ -1,12 +1,12 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
 
-    IF(a + b = c) {
+    IF(a + b == c) {
         return 'c';
     }
-    IF(a + c = b) {
+    IF(a + c == b) {
         return 'b';
     }
-    IF(b + c = a) {
+    IF(b + c == a) {
         return 'a';
     }
     ELSE {

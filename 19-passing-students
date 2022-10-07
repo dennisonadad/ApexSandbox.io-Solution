@@ -1,5 +1,5 @@
 public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
-    Integer count =0;
+    Integer count = 0;
     IF(passedExam) count ++;
     IF(passedAssignments) count ++;
     IF(passedProject) count ++;

@@ -1,6 +1,15 @@
 public String aOrAn(String word) {
-    return 'aeiou'.containsAny(word.left(1)) ? 'an ' + word : 'a ' + word;
+    
     /*
+    Given a work, prepend it with the correct indefinite article ("a" or "an") followed by a space based on the following rule: words starting with a vowel (a, e, i, o, or u) are prepended with "an", while words starting with any other letter are prepended with "a".
+    Example 1: aOrAn('apple') = 'an apple'
+    Example 2: aOrAn('banana') = 'a banana'
+    */
+
+    // code here
+    return 'aeiou'.containsAny(word.left(1)) ? 'an ' + word : 'a ' + word;
+    
+    /* Version 1 Code
     if (word.startsWith('a') || 
         word.startsWith('e') || 
         word.startsWith('i') || 

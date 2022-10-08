@@ -1,4 +1,11 @@
 public Boolean isEndWithZero(Integer num){
+     
+     /*
+     Given an integer, return true if the integer ends with 0, otherwise return false.
+     Example 1: isEndWithZero(12) == false
+     Example 2: isEndWithZero(1230) == true
+     */
+     
      //code here
      return Math.mod(num, 10) == 0;
 }

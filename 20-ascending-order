@@ -1,6 +1,15 @@
 public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
-    return b >= a && c >= b;
+    
     /*
+    Given three Integers a, b, and c, return true if they are in ascending order. For our purposes, two equal numbers will be considered to be in an ascending order.
+    Example 1: ascendingOrder(10, 10, 15) = true
+    Example 2: ascendingOrder(15, 14, 13) = false
+    */
+    
+    // code here    
+    return b >= a && c >= b;
+    
+    /* Version 1 Code
     IF(a <= b && b <= c) {
         return true;
     }

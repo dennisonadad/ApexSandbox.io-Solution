@@ -12,7 +12,7 @@ public Boolean isPrime(Integer num) {
     Integer primevalues = 0;
 
     WHILE(count < num - 1){
-        Math.mod(num, count) == 0 ? primevalues++
+        IF(Math.mod(num, count) == 0) primevalues++;
         count++;
     }
     return primevalues > 0;

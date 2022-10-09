@@ -8,7 +8,6 @@ public Boolean companionPlants(String plant1, String plant2) {
     */
     
     //code here
-
     Map<String, String> plantmap = new Map<String, String>{
         'lettuce' => 'cucumbers',
         'lettuce' => 'onions',

@@ -1,0 +1,23 @@
+public Integer fibonacci(Integer n) {
+    
+    /*
+    The first two numbers in the fibonacci sequence are 1, and all other numbers in the sequence are defined as the sum of the last two fibonacci numbers. The first 10 numbers in the fibonacci sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, and 55.
+    Implement the function fibonacci that takes as input an Integer n and returns the nth fibonacci number. Assume that n will always be greater than 0.
+    Example 1: fibonacci(1) = 1
+    Example 2: fibonacci(2) = 1
+    Example 3: fibonacci(5) = 5
+    */
+    
+    //code here
+    Integer count = 1;
+    Integer a = 0;
+    Integer b = 1;
+
+    WHILE(count < n + 1){
+        Integer sum = a + b;
+        a = b;
+        b = sum;
+        count++;
+    }
+    return a;
+}

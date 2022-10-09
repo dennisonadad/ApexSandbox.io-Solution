@@ -7,5 +7,5 @@ public String formatName(String firstName, String lastName) {
     */
     
     //code here
-    return String.IsNull(firstName) == true || String.IsBlank(lastName) == true ? firstName + lastName : lastName + ', ' + firstName;
+    return String.IsBlank(firstName) == true || String.IsBlank(lastName) == true ? firstName + lastName : lastName + ', ' + firstName;
 }

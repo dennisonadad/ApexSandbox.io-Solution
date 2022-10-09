@@ -9,6 +9,7 @@ public Integer fibonacci(Integer n) {
     */
     
     //code here
+    /*
     Integer count = 1;
     Integer a = 0;
     Integer b = 1;
@@ -20,6 +21,7 @@ public Integer fibonacci(Integer n) {
         count++;
     }
     return a;
+    */
 
     /* Recursive Version
     IF(n < 3) return 1;

@@ -17,5 +17,5 @@ public Integer sumToN(Integer n) {
         b = sum;
         count++;
     }
-    return b;
+    return a;
 }

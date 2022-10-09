@@ -23,8 +23,6 @@ public Integer fibonacci(Integer n) {
     return a;
     */
 
-    /* Recursive Version
     IF(n < 3) return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);
-    */
 }

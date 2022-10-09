@@ -21,7 +21,7 @@ public String changeTimeFormat(String strTime) {
     IF(hours == 0) hours = 12;
 
     String strHours = String.valueOf(hours);
-    if (strHours.length() == 1) strHours = '0' + strHours;
+    IF(strHours.length() == 1) strHours = '0' + strHours;
 
     return strHours + ':' + parts[1] + suffix;
 }

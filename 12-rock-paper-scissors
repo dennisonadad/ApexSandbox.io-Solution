@@ -8,6 +8,18 @@ public Integer rockPaperScissors(String player1, String player2) {
     */
     
     //code here
+    if (player1 == player2) return 0;
+
+    Map<String, String> winmap = new Map<String, String>{
+        'rock' => 'scissors',
+        'paper' => 'rock',
+        'scissors' => 'paper'
+    };
+
+    if (winmap.get(player1) == player2) return 1;
+    return 2;
+    
+    /* Version 1 Code
     IF(player1 == 'rock' && player2 == 'paper') {
         return 2;
     }
@@ -29,4 +41,5 @@ public Integer rockPaperScissors(String player1, String player2) {
     ELSE {
         return 0;
     }
+    */
 }

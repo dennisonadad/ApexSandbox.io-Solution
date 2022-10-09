@@ -3,4 +3,5 @@ public Boolean isTypeAccount(sObject record)
     // code here
     Account acc = new Account(name = 'Apple')
     Boolean result = isTypeAccount(acc) instanceof Account;
+    return result;
 }

@@ -15,5 +15,5 @@ public Boolean isPrime(Integer num) {
         IF(Math.mod(num, count) == 0) primevalues++;
         count++;
     }
-    return primevalues > 0;
+    return primevalues == 0;
 }

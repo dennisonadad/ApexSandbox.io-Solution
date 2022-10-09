@@ -1,0 +1,14 @@
+public String ageGroup(Integer n) {
+    
+    /*
+    Given a person's age, return their age group as a string: 'Infant' for ages 0-1, 'Child' for ages 2 - 14, 'Youth' for ages 15 - 21, and 'Adult' for ages 22+.
+    Example 1: ageGroup(5) = 'Child'
+    Example 2: ageGroup(15) = 'Youth'
+    */
+    
+    //code here
+    IF(n > 21) return 'Adult';
+    IF(n > 14 && n <= 21) return 'Youth';
+    IF(n > 2 && n <= 14) return 'Child';
+    ELSE return 'Infant';
+}

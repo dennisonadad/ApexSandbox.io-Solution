@@ -7,6 +7,6 @@ public String nameFromEmail(String email) {
     */
     
     //code here
-    String display = email.substringBefore('.').capitalize();
+    String display = email.substringBefore('.').toLowercase().capitalize();
     return display;
 }

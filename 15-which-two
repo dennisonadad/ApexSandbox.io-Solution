@@ -1,4 +1,12 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
+    
+    /*
+    Given Integers a, b, and c, determine if any two of them add up to the third and return 'a', 'b', 'c' depending on which the sum is. If no two numbers add up to a third number, return an empty string. Assume that multiple solutions do not exist.
+    Example 1: whichTwo(5, 10, 5) = 'b'
+    Example 2: whichTwo(2, 0, 3) = ''
+    */
+
+    // code here
     IF(a + b == c) {
         return 'c';
     }

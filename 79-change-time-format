@@ -1,0 +1,11 @@
+public String changeTimeFormat(String strTime) {
+    
+    /*
+    13:50 and 01:50 PM are 24-hour and 12-hour representations of the same time. Implement the method changeTimeFormat that takes as input a string strTime formatted as a 24-hour string, and returns the equivalent 12-hour string.
+    Example 1: changeTimeFormat('08:05') returns '08:05 AM'
+    Example 2: changeTimeFormat('00:05') returns '12:00 AM'
+    Example 3: changeTimeFormat('23:15') returns '11:15 PM'
+    */
+    
+    //code here
+}

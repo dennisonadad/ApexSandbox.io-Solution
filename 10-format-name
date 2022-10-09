@@ -1,0 +1,11 @@
+public String formatName(String firstName, String lastName) {
+    
+    /*
+    Given two strings firstName and lastName, return the name in the format LastName, FirstName. In case one of the names is null or empty, return only the non-empty part of the name. If both are null or empty, return an empty string.
+    Example 1: formatName('Jane', 'Doe') = 'Doe, Jane'
+    Example 2: formatName('Jane', '') = 'Jane'
+    */
+    
+    //code here
+    return String.IsBlank(firstName) == true || String.IsBlank(lastName) == true ? firstName + lastName : lastName + ', ' + firstName;
+}

@@ -14,6 +14,10 @@ public Boolean companionPlants(String plant1, String plant2) {
         'lettuce' => 'onions',
         'onions' => 'carrots',
         'onions' => 'tomatoes'
+        'cucumbers' => 'lettuce',
+        'onions' => 'lettuce',
+        'carrots' => 'onions',
+        'tomatoes' => 'onions'
     };
 
     if (plantmap.get(plant1) == plant2) return true;

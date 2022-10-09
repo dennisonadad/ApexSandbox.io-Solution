@@ -8,14 +8,12 @@ public Integer sumToN(Integer n) {
     
     //code here
     Integer count = 1;
-    Integer a = 0;
+    Integer sum = 0;
     Integer b = 1;
 
     WHILE(count < n + 1){
-        Integer sum = a + b;
-        a = b;
-        b = sum;
+        Integer sum = sum + count;
         count++;
     }
-    return a;
+    return sum;
 }

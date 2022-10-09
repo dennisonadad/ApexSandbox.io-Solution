@@ -32,6 +32,6 @@ public Boolean companionPlants(String plant1, String plant2) {
         */
     };
 
-    if (plantmap.get(plant1) == plantmap.get(plant2)) return true;
+    if (plantmap.get(plant1) == plant2) return true;
     return false;
 }

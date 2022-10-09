@@ -1,7 +1,11 @@
 public Boolean isTypeAccount(sObject record)
 {
     // code here
+    IF(record == null) return false;
+    return record.getSObjectType() == Account.SObjectType;
+
+    /* Test Code
     Account acc = new Account(name = 'Apple')
-    Boolean result = isTypeAccount(acc) instanceof Account;
-    return result;
+    Boolean result = isTypeAccount(acc);
+    */
 }

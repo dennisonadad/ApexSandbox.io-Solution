@@ -1,0 +1,21 @@
+public Integer sumToN(Integer n) {
+    
+    /*
+    Implement the method sumToN that calculates and returns the sum of all numbers (inclusive) from 1 to n. Assume that n will be non-zero positive integer.
+    Example 1: sumToN(5) = 15
+    Example 2: sumToN(2) = 3
+    */
+    
+    //code here
+    Integer count = 1;
+    Integer a = 0;
+    Integer b = 1;
+
+    WHILE(count < n+1){
+        Integer sum = a + b;
+        a = b;
+        b = sum;
+        count++;
+    }
+    return a;
+}

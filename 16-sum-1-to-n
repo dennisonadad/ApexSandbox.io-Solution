@@ -11,11 +11,11 @@ public Integer sumToN(Integer n) {
     Integer a = 0;
     Integer b = 1;
 
-    WHILE(count < n+1){
+    WHILE(count < n + 1){
         Integer sum = a + b;
         a = b;
         b = sum;
         count++;
     }
-    return a;
+    return b;
 }

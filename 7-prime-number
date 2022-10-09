@@ -9,11 +9,11 @@ public Boolean isPrime(Integer num) {
     
     //code here
     Integer count = 2;
-    Integer isdivisible = 0;
+    Integer countdivisible = 0;
 
     WHILE(count < num - 1){
-        IF(Math.mod(num, count) == 0) isdivisible++;
+        IF(Math.mod(num, count) == 0) countdivisible++;
         count++;
     }
-    return isdivisible == 0;
+    return countdivisible == 0;
 }

@@ -8,30 +8,33 @@ public Boolean companionPlants(String plant1, String plant2) {
     */
     
     //code here
-    Map<String, String> plantmap = new Map<String, String>{
-        
-        'lettuce' => 'cucumbers',
-        'lettuce' => 'onions',
-        'onions' => 'carrots',
-        'onions' => 'tomatoes',
-        'cucumbers' => 'lettuce',
-        'onions' => 'lettuce',
-        'carrots' => 'onions',
-        'tomatoes' => 'onions'
-
-        
-        /* First Attempt List
-        'lettuce' => 'cucumbers',
-        'lettuce' => 'onions',
-        'onions' => 'carrots',
-        'onions' => 'tomatoes',
-        'cucumbers' => 'lettuce',
-        'onions' => 'lettuce',
-        'carrots' => 'onions',
-        'tomatoes' => 'onions'
-        */
+    //create a map of companion plants
+    MAP<String, Boolean> plantMap = NEW MAP<String, Boolean>{
+        'lettucecucumbers' => true,
+        'lettuceonions' => true,
+        'onionscarrots' => true,
+        'onionstomatoes' => true,
+        'cucumberslettuce' => true,
+        'onionslettuce' => true,
+        'carrotsonions' => true,
+        'tomatoesonions' => true
     };
-
-    if (plantmap.get(plant1) == plant2) return true;
+    
+    IF(plantMap.get(plant1+plant2) == true) return true;
     return false;
+    }
+
+    /* Version 1 Code
+    if (plant1 == 'onions' && (plant2 == 'lettuce' || plant2 == 'carrots' || plant2 == 'tomatoes'))
+        return true;
+    else if (plant1 == 'lettuce' && (plant2 == 'cucumbers' || plant2 == 'onions'))
+        return true;
+    else if (plant1 == 'cucumbers' && plant2 == 'lettuce')
+        return true;
+    else if (plant1 == 'carrots' && plant2 == 'onions')
+        return true;
+    else if (plant1 == 'tomatoes' && plant2 == 'onions')
+        return true;
+    else return false;
+    */
 }
